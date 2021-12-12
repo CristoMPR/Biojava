@@ -6,7 +6,7 @@ Proyecto desarrollado para la asignatura Laboratorio de Desarrollo y Herramienta
 
 Se encuentra soportado en Maven y SonarCloud, enlaces a continuación:
 
-- Link a SonarCloud:
+- Link a SonarCloud: https://sonarcloud.io/project/overview?id=CristoMPR_Biojava
 
 ### Contactos
 
