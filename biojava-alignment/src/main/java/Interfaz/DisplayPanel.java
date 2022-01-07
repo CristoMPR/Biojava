@@ -1,6 +1,5 @@
 package Interfaz;
 
-import demo.CookbookMSA;
 import demo.TestDNANeedlemanWunsch;
 
 import javax.swing.*;
@@ -17,7 +16,7 @@ public class DisplayPanel extends JPanel{
     private Integer optNumber = 1;
 
     public DisplayPanel() {
-        setBounds(0, 180, 1920, 820);
+        setBounds(0, 180, 1200, 680);
         setBackground(Color.decode("#f0f8ff"));
         setLayout(null);
         setVisible(true);
@@ -44,16 +43,16 @@ public class DisplayPanel extends JPanel{
         showButton = new JButton("Mostrar");
         wunschBox = new JComboBox<>();
 
-        descLabel.setBounds(100, 20, 200, 30);
-        queryLabel.setBounds(100, 70, 200, 30);
-        targetLabel.setBounds(100, 370, 200, 30);
-        selLabel.setBounds(650, 150, 100, 30);
-        expLabel.setBounds(650, 100, 400, 30);
-        queryArea.setBounds(110, 100, 500, 270);
-        targetArea.setBounds(110, 400, 500, 270);
-        startButton.setBounds(510, 700, 100, 30);
-        showButton.setBounds(910, 150, 100, 30);
-        wunschBox.setBounds(780, 150, 100, 30);
+        descLabel.setBounds(50, 10, 200, 30);
+        queryLabel.setBounds(50, 30, 200, 30);
+        targetLabel.setBounds(50, 210, 200, 30);
+        selLabel.setBounds(580, 50, 100, 30);
+        expLabel.setBounds(580, 80, 450, 30);
+        queryArea.setBounds(60, 60, 500, 150);
+        targetArea.setBounds(60, 240, 500, 150);
+        startButton.setBounds(460, 400, 100, 30);
+        showButton.setBounds(700, 120, 100, 30);
+        wunschBox.setBounds(580, 120, 100, 30);
 
         add(descLabel);
         add(queryLabel);
@@ -96,7 +95,7 @@ public class DisplayPanel extends JPanel{
                                     "\n% de Query idéntico: " + (float) (Float.parseFloat(info[1]) / Float.parseFloat(info[2])) +
                                     "\n% de Target idéntico: " + (float) (Float.parseFloat(info[1]) / Float.parseFloat(info[3]))
                                 );
-            displayArea.setBounds(1100, 150, 500, 500);
+            displayArea.setBounds(830, 120, 350, 330);
             add(displayArea);
             displayArea.setVisible(true);
             displayArea.setEditable(false);

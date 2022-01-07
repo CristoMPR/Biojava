@@ -1,9 +1,5 @@
 package Interfaz;
 
-
-import demo.CookbookMSA;
-import demo.TestDNANeedlemanWunsch;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -29,8 +25,8 @@ public class Panel extends JPanel implements ActionListener {
         buttonStart = new JButton("Comenzar");
         demoBox = new JComboBox<>();
 
-        buttonStart.setBounds(800, 120, 125, 30);
-        demoBox.setBounds(850, 70, 200, 30);
+        buttonStart.setBounds(460, 120, 125, 30);
+        demoBox.setBounds(650, 70, 200, 30);
         //demoBox.addItem("CookbookMSA");
         //demoBox.addItem("DemoAlignProteins");
         //demoBox.addItem("DemoDistanceTree");
@@ -47,8 +43,8 @@ public class Panel extends JPanel implements ActionListener {
         tittleLabel = new JLabel();
         msgLabel = new JLabel();
 
-        tittleLabel.setBounds(760, 30, 200, 30);
-        msgLabel.setBounds(600, 70, 250, 30);
+        tittleLabel.setBounds(460, 30, 200, 30);
+        msgLabel.setBounds(400, 70, 250, 30);
 
         tittleLabel.setText("¡Bienvenido al selector de demos!");
         msgLabel.setText("Seleccione una de las siguientes demos: ");

@@ -1,6 +1,5 @@
 package demo;
 
-import Interfaz.Frame;
 import org.biojava.nbio.alignment.Alignments;
 import org.biojava.nbio.alignment.SimpleGapPenalty;
 import org.biojava.nbio.alignment.template.GapPenalty;
@@ -15,26 +14,42 @@ import org.biojava.nbio.core.sequence.compound.NucleotideCompound;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
-public class DemoSelect {
+public class DemoMenu {
 
     static public void main(String[] args) throws Exception {
-        System.out.println(args[0]);
+        DemoMenu demo = new DemoMenu();
+        demo.menu();
+    }
 
-        if(args[0].equals(Integer.toString(1)) ){
-            System.out.println("GUI DEMO ");
-            new Frame();
-        } else if(args[0].equals(Integer.toString(2))){
-            System.out.println("GUI Sin Interfaz ");
-            valoresTerminal();
-        } else if (args[0].equals(Integer.toString(3))){
-            System.exit(0);
-        } else {
-            System.out.println("¡Introduzca un valor valido!");
+    private void menu() throws Exception {
+        System.out.println("BIOJAVA!");
+        System.out.println("¿Que desea hacer?\n   1.GUI DEMO \n   2.Aplicación sin interfaz \n   3.Salir del programa");
+        Scanner reader = new Scanner(System.in);
+        int eleccion = reader.nextInt();
+
+        switch (eleccion) {
+            case 1:
+                System.out.println("GUI DEMO ");
+                new Frame();
+                break;
+
+            case 2:
+                valoresMenu();
+                break;
+
+            case 3:
+                System.exit(0);
+                break;
+
+            default:
+                System.out.println("¡Introduzca un valor valido!");
+                break;
         }
     }
-    
-    private static void valoresTerminal() throws IOException, CompoundNotFoundException {
+
+    private void valoresMenu() throws IOException, CompoundNotFoundException {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
