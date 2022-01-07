@@ -34,7 +34,7 @@ import org.biojava.nbio.core.sequence.compound.NucleotideCompound;
 import java.util.HashMap;
 
 public class TestDNANeedlemanWunsch {
-
+/**
 	public static void main(String[] args) throws Exception {
 
 		String query = "AGGATGAACGCTGGCGGCGTGCTTAACACATGCAAGTCGAACGGTGAAGCCCAGCTTGCTGGGTGGATCA" +
@@ -97,7 +97,7 @@ public class TestDNANeedlemanWunsch {
 		System.out.println("% identical query: "+ identical / (float) query.length());
 		System.out.println("% identical target: "+ identical / (float) target.length());
 	}
-
+**/
 	private static final HashMap wunschMap = new HashMap();
 	private static int no = 1;
 

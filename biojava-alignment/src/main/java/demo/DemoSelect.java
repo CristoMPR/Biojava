@@ -26,7 +26,10 @@ public class DemoSelect {
             new Frame();
         } else if(args[0].equals(Integer.toString(2))){
             System.out.println("GUI Sin Interfaz ");
-            valoresTerminal();
+            if(args.length == 1)
+                valoresTerminal("", "");
+            else
+                valoresTerminal(args[1], args[2]);
         } else if (args[0].equals(Integer.toString(3))){
             System.exit(0);
         } else {
@@ -34,30 +37,42 @@ public class DemoSelect {
         }
     }
     
-    private static void valoresTerminal() throws IOException, CompoundNotFoundException {
+    private static void valoresTerminal(String id1, String id2) throws IOException, CompoundNotFoundException, Exception {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        //System.out.println("Quiere usar: \nwaterman: 1\nWunsch: 2");
+        //String option = reader.readLine();
 
-        System.out.println("Introduzca los valores del 'Query': ");
-        String query = reader.readLine();
 
-        System.out.println("Introduzca los valores del 'Target':");
-        String target = reader.readLine();
+        if (!id1.isEmpty() && !id2.isEmpty()) {
+            Waterman wat = new Waterman(id1, id2);
+        } else {
+            System.out.println("Introduzca los valores del 'Query': ");
+            String query = reader.readLine();
 
-        GapPenalty penalty = new SimpleGapPenalty(-14, -4);
-        PairwiseSequenceAligner<DNASequence, NucleotideCompound> aligner = Alignments.getPairwiseAligner(
-                new DNASequence(query, AmbiguityDNACompoundSet.getDNACompoundSet()),
-                new DNASequence(target, AmbiguityDNACompoundSet.getDNACompoundSet()),
-                Alignments.PairwiseSequenceAlignerType.GLOBAL,
-                penalty, SubstitutionMatrixHelper.getNuc4_4());
-        SequencePair<DNASequence, NucleotideCompound>
-                alignment = aligner.getPair();
+            System.out.println("Introduzca los valores del 'Target':");
+            String target = reader.readLine();
 
-        System.out.println("Alignment: "+ alignment);
+            GapPenalty penalty = new SimpleGapPenalty(-14, -4);
+            PairwiseSequenceAligner<DNASequence, NucleotideCompound> aligner = Alignments.getPairwiseAligner(
+                    new DNASequence(query, AmbiguityDNACompoundSet.getDNACompoundSet()),
+                    new DNASequence(target, AmbiguityDNACompoundSet.getDNACompoundSet()),
+                    Alignments.PairwiseSequenceAlignerType.GLOBAL,
+                    penalty, SubstitutionMatrixHelper.getNuc4_4());
+            SequencePair<DNASequence, NucleotideCompound>
+                    alignment = aligner.getPair();
 
-        int identical = alignment.getNumIdenticals();
-        System.out.println("Number of identical residues: "+ identical);
-        System.out.println("% identical query: "+ identical / (float) query.length());
-        System.out.println("% identical target: "+ identical / (float) target.length());
+            System.out.println("Alignment: "+ alignment);
+
+            int identical = alignment.getNumIdenticals();
+            System.out.println("Number of identical residues: "+ identical);
+            System.out.println("% identical query: "+ identical / (float) query.length());
+            System.out.println("% identical target: "+ identical / (float) target.length());
+        }
+
+
+
+
+
     }
 }

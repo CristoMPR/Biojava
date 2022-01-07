@@ -1,5 +1,6 @@
 package Interfaz;
 
+import demo.CookbookMSA;
 import demo.TestDNANeedlemanWunsch;
 
 import javax.swing.*;

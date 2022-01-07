@@ -1,6 +1,7 @@
 package Interfaz;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class Frame extends JFrame {
     private Panel panel;

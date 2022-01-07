@@ -1,5 +1,6 @@
 package demo;
 
+import Interfaz.Frame;
 import org.biojava.nbio.alignment.Alignments;
 import org.biojava.nbio.alignment.SimpleGapPenalty;
 import org.biojava.nbio.alignment.template.GapPenalty;
