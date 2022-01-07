@@ -42,7 +42,7 @@ public class CookbookMSA {
 		multipleSequenceAlignment(ids);
 	}
 
-	private static void multipleSequenceAlignment(String[] ids) throws Exception {
+	public static void multipleSequenceAlignment(String[] ids) throws Exception {
 		List<ProteinSequence> lst = new ArrayList<ProteinSequence>();
 		for (String id : ids) {
 			lst.add(getSequenceForId(id));

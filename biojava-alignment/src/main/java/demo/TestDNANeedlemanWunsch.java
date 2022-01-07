@@ -31,6 +31,8 @@ import org.biojava.nbio.core.sequence.DNASequence;
 import org.biojava.nbio.core.sequence.compound.AmbiguityDNACompoundSet;
 import org.biojava.nbio.core.sequence.compound.NucleotideCompound;
 
+import java.util.HashMap;
+
 public class TestDNANeedlemanWunsch {
 
 	public static void main(String[] args) throws Exception {
@@ -95,4 +97,31 @@ public class TestDNANeedlemanWunsch {
 		System.out.println("% identical query: "+ identical / (float) query.length());
 		System.out.println("% identical target: "+ identical / (float) target.length());
 	}
+
+	private static final HashMap wunschMap = new HashMap();
+	private static int no = 1;
+
+	public static void TestDNANeedlemanWunsch(String query, String target) throws Exception {
+
+		GapPenalty penalty = new SimpleGapPenalty(-14, -4);
+		PairwiseSequenceAligner<DNASequence, NucleotideCompound> aligner = Alignments.getPairwiseAligner(
+				new DNASequence(query, AmbiguityDNACompoundSet.getDNACompoundSet()),
+				new DNASequence(target, AmbiguityDNACompoundSet.getDNACompoundSet()),
+				PairwiseSequenceAlignerType.GLOBAL,
+				penalty, SubstitutionMatrixHelper.getNuc4_4());
+		SequencePair<DNASequence, NucleotideCompound>
+				alignment = aligner.getPair();
+
+		System.out.println("Alignment: "+ alignment);
+
+		int identical = alignment.getNumIdenticals();
+		String[] values = new String[]{alignment.toString(), String.valueOf(identical), String.valueOf(query.length()), String.valueOf(target.length())};
+		wunschMap.put(no, values);
+		no++;
+	}
+
+	public static HashMap getWunschMap() {
+		return wunschMap;
+	}
+
 }
