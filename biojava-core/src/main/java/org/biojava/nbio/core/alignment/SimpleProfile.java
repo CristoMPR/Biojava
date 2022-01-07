@@ -398,7 +398,7 @@ public class SimpleProfile<S extends Sequence<C>, C extends Compound> implements
 
 	@Override
 	public String toString() {
-		return toString(getLength(), null, IOUtils.getIDFormat(list), true, false, false, false, false, false);
+		return toString(getLength(), null, null, true, false, false, false, false, false);
 	}
 
 	// method for Iterable
