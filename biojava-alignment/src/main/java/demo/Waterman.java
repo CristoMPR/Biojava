@@ -17,9 +17,8 @@ import org.biojava.nbio.core.alignment.template.SubstitutionMatrix;
 import org.biojava.nbio.core.sequence.ProteinSequence;
 import org.biojava.nbio.core.sequence.compound.AminoAcidCompound;
 import org.biojava.nbio.core.sequence.io.FastaReaderHelper;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-import java.io.IOException;
+
+import java.io.*;
 import java.net.URL;
 
 /**
@@ -92,7 +91,7 @@ public class Waterman {
     /**
      * @brief Método para escribir el contenido en un fichero JSON
      */
-    private void toJSON() {
+    private void toJSON() throws IOException {
         String json = "{ \n \t\"Proteina\": [\n\t{\n";
         json += "\t\t\"id\": \""+uniprotID1+"\",\n";
         json += "\t\t\"seq\": \""+s1+"\",\n";
@@ -102,7 +101,12 @@ public class Waterman {
         json += "\t\t\"header\": \""+s2.getOriginalHeader()+"\"\n\t}\n\t],\n";
         json += "\t\"alignment\": \n\""+pair.toString()+"\"\n}";
 
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("alignment.json"))) {
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        System.out.println("Introduzca el nombre del fichero: ");
+        String filename = reader.readLine();
+        filename += ".json";
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(filename))) {
             bw.write(json);
             System.out.println("Fichero creado");
         } catch (IOException ex) {}
