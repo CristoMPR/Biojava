@@ -31,7 +31,7 @@ public class DNANeedlemanWunsch {
 	 * @param query: Primer string para alinear
 	 * @param target: Segunda string para alinear
 	 */
-	public static void TestDNANeedlemanWunsch(String query, String target) throws Exception {
+	public static void DNANeedlemanWunsch(String query, String target) throws Exception {
 
 		GapPenalty penalty = new SimpleGapPenalty(-14, -4);
 		PairwiseSequenceAligner<DNASequence, NucleotideCompound> aligner = Alignments.getPairwiseAligner(

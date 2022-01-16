@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: org.biojava.nbio.alignment.WatermanTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.386 s - in org.biojava.nbio.alignment.WatermanTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.324 s - in org.biojava.nbio.alignment.WatermanTest

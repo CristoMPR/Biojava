@@ -74,9 +74,9 @@ public class DisplayPanel extends JPanel{
             String query = queryArea.getText();
             String target = targetArea.getText();
             try {
-                DNANeedlemanWunsch.TestDNANeedlemanWunsch(query, target);
+                DNANeedlemanWunsch.DNANeedlemanWunsch(query, target);
             } catch (Exception ex) {
-                ex.printStackTrace();
+                System.err.println("Error de DNANeedlemanWunsch");
             }
             wunschBox.addItem(optNumber);
             optNumber++;
