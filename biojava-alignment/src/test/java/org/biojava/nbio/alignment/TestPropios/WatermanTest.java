@@ -10,6 +10,14 @@ import org.junit.jupiter.api.DisplayName;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
+/**
+ * @class WatermanTest
+ * @author Angel Emilio Capote Perez
+ * @author Cristo Manuel Perez Rodriguez
+ * @author Elena Rijo Garcia
+ * @date 16/01/2022
+ * @brief Test de Waterman
+ */
 @DisplayName("Test de Waterman")
 public class WatermanTest {
 
@@ -28,6 +36,9 @@ public class WatermanTest {
         seq2 = "MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH";
     }
 
+    /**
+     * @brief Test para comprobar el valor de la secuencia
+     */
     @Test
     @DisplayName("Test para comprobar el valor de la secuencia")
     public void testGetSequenceForId() throws Exception {
@@ -38,6 +49,9 @@ public class WatermanTest {
         assertEquals(waterman.getSequenceForId(uniprotID2).toString(), seq2);
     }
 
+    /**
+     * @brief Test para comprobar el valor del id de la proteina
+     */
     @Test
     @DisplayName("Test para comprobar el valor del id de la proteina")
     public void testGetters() {

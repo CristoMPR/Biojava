@@ -1,9 +1,3 @@
-/**
- * @author Angel Emilio Capote Perez
- * @author Cristo Manuel Perez Rodriguez
- * @author Elena Rijo Garcia
- * @date 16/01/2022
- */
 
 package demo;
 
@@ -21,9 +15,12 @@ import org.biojava.nbio.core.sequence.compound.NucleotideCompound;
 import java.util.HashMap;
 
 /**
- * @class TestDNANeadlemanWunsch
- * @brief Esta clase necesita de un query y un target para que se pueda aplicar el algoritmo Wunsh. Esta clase realiza
-		* tales comparaciones de secuencias globales de manera eficiente mediante programación dinámica.
+ * @class DNANeedlemanWunsch
+ * @author Angel Emilio Capote Perez
+ * @author Cristo Manuel Perez Rodriguez
+ * @author Elena Rijo Garcia
+ * @date 16/01/2022
+ * @brief Esta clase necesita de un query y un target para que se pueda aplicar el algoritmo Wunsh. Esta clase realiza tales comparaciones de secuencias globales de manera eficiente mediante programación dinámica.
  */
 public class DNANeedlemanWunsch {
 	private static final HashMap wunschMap = new HashMap();

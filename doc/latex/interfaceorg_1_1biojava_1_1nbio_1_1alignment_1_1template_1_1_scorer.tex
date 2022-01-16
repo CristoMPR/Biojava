@@ -1,0 +1,144 @@
+\hypertarget{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer}{}\doxysection{org.\+biojava.\+nbio.\+alignment.\+template.\+Scorer Interface Reference}
+\label{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer}\index{org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}}
+Inheritance diagram for org.\+biojava.\+nbio.\+alignment.\+template.\+Scorer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a573d5bf4f393022a4dc96dc7d7ccb610}{get\+Distance}} ()
+\item 
+double \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_af2cdc1c8a6a325554535ff090aeddc8a}{get\+Distance}} (double scale)
+\item 
+double \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7e970b963ebfaab851e0d0e0c65d125f}{get\+Max\+Score}} ()
+\item 
+double \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_aa71bfe84161146b4562273f31899dfbb}{get\+Min\+Score}} ()
+\item 
+double \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7ddd0b6416af190e9f8f2899f3761ab6}{get\+Score}} ()
+\item 
+double \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a9bf622c11b8a42ffb8f5e40f7bf6ed54}{get\+Similarity}} ()
+\item 
+double \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a8b782937faccfd921ffe1ee66f607b36}{get\+Similarity}} (double scale)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines an algorithm which computes a score.
+
+\begin{DoxyAuthor}{Author}
+Mark Chapman 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a573d5bf4f393022a4dc96dc7d7ccb610}\label{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a573d5bf4f393022a4dc96dc7d7ccb610}} 
+\index{org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double org.\+biojava.\+nbio.\+alignment.\+template.\+Scorer.\+get\+Distance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns score as a distance between 0.\+0 and 1.\+0. This equals (\mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7e970b963ebfaab851e0d0e0c65d125f}{get\+Max\+Score()}} -\/ \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7ddd0b6416af190e9f8f2899f3761ab6}{get\+Score()}}) / (\mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7e970b963ebfaab851e0d0e0c65d125f}{get\+Max\+Score()}} -\/ \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_aa71bfe84161146b4562273f31899dfbb}{get\+Min\+Score()}}).
+
+\begin{DoxyReturn}{Returns}
+score as a distance between 0.\+0 and 1.\+0 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_abstract_scorer_a32955e7140e47a5a5e496ff83539d5a2}{org.\+biojava.\+nbio.\+alignment.\+template.\+Abstract\+Scorer}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_af2cdc1c8a6a325554535ff090aeddc8a}\label{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_af2cdc1c8a6a325554535ff090aeddc8a}} 
+\index{org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}!getDistance@{getDistance}}
+\index{getDistance@{getDistance}!org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}}
+\doxysubsubsection{\texorpdfstring{getDistance()}{getDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double org.\+biojava.\+nbio.\+alignment.\+template.\+Scorer.\+get\+Distance (\begin{DoxyParamCaption}\item[{double}]{scale }\end{DoxyParamCaption})}
+
+Returns score as a distance between 0.\+0 and scale. This equals scale $\ast$ (\mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7e970b963ebfaab851e0d0e0c65d125f}{get\+Max\+Score()}} -\/ \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7ddd0b6416af190e9f8f2899f3761ab6}{get\+Score()}}) / (\mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7e970b963ebfaab851e0d0e0c65d125f}{get\+Max\+Score()}} -\/ \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_aa71bfe84161146b4562273f31899dfbb}{get\+Min\+Score()}}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & maximum distance \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+score as a distance between 0.\+0 and scale 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_abstract_scorer_a2f7db3ad6d3628cbb2ea2edeee8eb6c7}{org.\+biojava.\+nbio.\+alignment.\+template.\+Abstract\+Scorer}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7e970b963ebfaab851e0d0e0c65d125f}\label{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7e970b963ebfaab851e0d0e0c65d125f}} 
+\index{org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}!getMaxScore@{getMaxScore}}
+\index{getMaxScore@{getMaxScore}!org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}}
+\doxysubsubsection{\texorpdfstring{getMaxScore()}{getMaxScore()}}
+{\footnotesize\ttfamily double org.\+biojava.\+nbio.\+alignment.\+template.\+Scorer.\+get\+Max\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns maximum possible score.
+
+\begin{DoxyReturn}{Returns}
+maximum possible score 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_aa71bfe84161146b4562273f31899dfbb}\label{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_aa71bfe84161146b4562273f31899dfbb}} 
+\index{org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}!getMinScore@{getMinScore}}
+\index{getMinScore@{getMinScore}!org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}}
+\doxysubsubsection{\texorpdfstring{getMinScore()}{getMinScore()}}
+{\footnotesize\ttfamily double org.\+biojava.\+nbio.\+alignment.\+template.\+Scorer.\+get\+Min\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns minimum possible score.
+
+\begin{DoxyReturn}{Returns}
+minimum possible score 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7ddd0b6416af190e9f8f2899f3761ab6}\label{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7ddd0b6416af190e9f8f2899f3761ab6}} 
+\index{org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}!getScore@{getScore}}
+\index{getScore@{getScore}!org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}}
+\doxysubsubsection{\texorpdfstring{getScore()}{getScore()}}
+{\footnotesize\ttfamily double org.\+biojava.\+nbio.\+alignment.\+template.\+Scorer.\+get\+Score (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns score resulting from algorithm. This should normalize between 0 and 1 by calculating (\mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7ddd0b6416af190e9f8f2899f3761ab6}{get\+Score()}} -\/ \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_aa71bfe84161146b4562273f31899dfbb}{get\+Min\+Score()}}) / (\mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7e970b963ebfaab851e0d0e0c65d125f}{get\+Max\+Score()}} -\/ \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_aa71bfe84161146b4562273f31899dfbb}{get\+Min\+Score()}}).
+
+\begin{DoxyReturn}{Returns}
+score resulting from algorithm 
+\end{DoxyReturn}
+\mbox{\Hypertarget{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a9bf622c11b8a42ffb8f5e40f7bf6ed54}\label{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a9bf622c11b8a42ffb8f5e40f7bf6ed54}} 
+\index{org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}!getSimilarity@{getSimilarity}}
+\index{getSimilarity@{getSimilarity}!org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}}
+\doxysubsubsection{\texorpdfstring{getSimilarity()}{getSimilarity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double org.\+biojava.\+nbio.\+alignment.\+template.\+Scorer.\+get\+Similarity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns score as a similarity between 0.\+0 and 1.\+0. This equals (\mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7ddd0b6416af190e9f8f2899f3761ab6}{get\+Score()}} -\/ \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_aa71bfe84161146b4562273f31899dfbb}{get\+Min\+Score()}}) / (\mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7e970b963ebfaab851e0d0e0c65d125f}{get\+Max\+Score()}} -\/ \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_aa71bfe84161146b4562273f31899dfbb}{get\+Min\+Score()}}).
+
+\begin{DoxyReturn}{Returns}
+score as a similarity between 0.\+0 and 1.\+0 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_abstract_scorer_a888376ff35390974c3367075cc0117c1}{org.\+biojava.\+nbio.\+alignment.\+template.\+Abstract\+Scorer}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a8b782937faccfd921ffe1ee66f607b36}\label{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a8b782937faccfd921ffe1ee66f607b36}} 
+\index{org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}!getSimilarity@{getSimilarity}}
+\index{getSimilarity@{getSimilarity}!org.biojava.nbio.alignment.template.Scorer@{org.biojava.nbio.alignment.template.Scorer}}
+\doxysubsubsection{\texorpdfstring{getSimilarity()}{getSimilarity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double org.\+biojava.\+nbio.\+alignment.\+template.\+Scorer.\+get\+Similarity (\begin{DoxyParamCaption}\item[{double}]{scale }\end{DoxyParamCaption})}
+
+Returns score as a similarity between 0.\+0 and scale. This equals scale $\ast$ (\mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7ddd0b6416af190e9f8f2899f3761ab6}{get\+Score()}} -\/ \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_aa71bfe84161146b4562273f31899dfbb}{get\+Min\+Score()}}) / (\mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_a7e970b963ebfaab851e0d0e0c65d125f}{get\+Max\+Score()}} -\/ \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_scorer_aa71bfe84161146b4562273f31899dfbb}{get\+Min\+Score()}}).
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & maximum similarity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+score as a similarity between 0.\+0 and scale 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_abstract_scorer_aa841a644964c104a686bc4f600597548}{org.\+biojava.\+nbio.\+alignment.\+template.\+Abstract\+Scorer}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+biojava-\/alignment/src/main/java/org/biojava/nbio/alignment/template/Scorer.\+java\end{DoxyCompactItemize}

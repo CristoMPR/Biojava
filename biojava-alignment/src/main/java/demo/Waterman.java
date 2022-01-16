@@ -1,10 +1,3 @@
-/**
- * @author Angel Emilio Capote Perez
- * @author Cristo Manuel Perez Rodriguez
- * @author Elena Rijo Garcia
- * @date 16/01/2022
- */
-
 package demo;
 
 import org.biojava.nbio.alignment.Alignments;
@@ -23,6 +16,10 @@ import java.net.URL;
 
 /**
  * @class Waterman
+ * @author Angel Emilio Capote Perez
+ * @author Cristo Manuel Perez Rodriguez
+ * @author Elena Rijo Garcia
+ * @date 16/01/2022
  * @brief Esta clase representa y compara dos secuencias de proteinas, que estan representadas por su ID. Esta clase
  * realiza tales comparaciones de secuencias locales de manera eficiente mediante programación dinámica.
  */

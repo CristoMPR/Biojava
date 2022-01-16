@@ -1,0 +1,55 @@
+\hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments}{}\doxysection{org.\+biojava.\+nbio.\+alignment.\+Alignments Class Reference}
+\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments}\index{org.biojava.nbio.alignment.Alignments@{org.biojava.nbio.alignment.Alignments}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Pair\+In\+Profile\+Scorer\+Type}
+\item 
+enum {\bfseries Pairwise\+Sequence\+Aligner\+Type}
+\item 
+enum {\bfseries Pairwise\+Sequence\+Scorer\+Type}
+\item 
+enum {\bfseries Profile\+Profile\+Aligner\+Type}
+\item 
+enum {\bfseries Refiner\+Type}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_a7a11d48d4806483ff0e3bf4e9cc6b24d}\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_a7a11d48d4806483ff0e3bf4e9cc6b24d}} 
+static$<$ S extends Sequence$<$ C $>$ C extends Compound List$<$ Sequence\+Pair$<$ S, C $>$ $>$ {\bfseries get\+All\+Pairs\+Alignments} (List$<$ S $>$ sequences, Pairwise\+Sequence\+Aligner\+Type type, \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty}{Gap\+Penalty}} gap\+Penalty, Substitution\+Matrix$<$ C $>$ sub\+Matrix)
+\item 
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_a72f50b937e173812f5b0bf1ff5366f5e}\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_a72f50b937e173812f5b0bf1ff5366f5e}} 
+static$<$ S extends Sequence$<$ C $>$ C extends Compound Profile$<$ S, C $>$ {\bfseries get\+Multiple\+Sequence\+Alignment} (List$<$ S $>$ sequences, Object... settings)
+\item 
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_adb7a2346733b7c55cbd4cb9ede50f1d3}\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_adb7a2346733b7c55cbd4cb9ede50f1d3}} 
+static$<$ S extends Sequence$<$ C $>$ C extends Compound Sequence\+Pair$<$ S, C $>$ {\bfseries get\+Pairwise\+Alignment} (S query, S target, Pairwise\+Sequence\+Aligner\+Type type, \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty}{Gap\+Penalty}} gap\+Penalty, Substitution\+Matrix$<$ C $>$ sub\+Matrix)
+\item 
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_a29f3cfe5013d690741aec21b40acf459}\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_a29f3cfe5013d690741aec21b40acf459}} 
+static$<$ S extends Sequence$<$ C $>$ C extends Compound List$<$ Pairwise\+Sequence\+Scorer$<$ S, C $>$ $>$ {\bfseries get\+All\+Pairs\+Scorers} (List$<$ S $>$ sequences, Pairwise\+Sequence\+Scorer\+Type type, \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty}{Gap\+Penalty}} gap\+Penalty, Substitution\+Matrix$<$ C $>$ sub\+Matrix)
+\item 
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_a198f89c6fd3aa6dc33e368d80adcb584}\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_a198f89c6fd3aa6dc33e368d80adcb584}} 
+static$<$ S extends Sequence$<$ C $>$ C extends Compound double\mbox{[}$\,$\mbox{]} {\bfseries get\+All\+Pairs\+Scores} (List$<$ S $>$ sequences, Pairwise\+Sequence\+Scorer\+Type type, \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty}{Gap\+Penalty}} gap\+Penalty, Substitution\+Matrix$<$ C $>$ sub\+Matrix)
+\item 
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_aa7a9fdf3eeeb114e58fd0e557d45b3d2}\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_aa7a9fdf3eeeb114e58fd0e557d45b3d2}} 
+static$<$ S extends Sequence$<$ C $>$ C extends Compound Pairwise\+Sequence\+Aligner$<$ S, C $>$ {\bfseries get\+Pairwise\+Aligner} (S query, S target, Pairwise\+Sequence\+Aligner\+Type type, \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty}{Gap\+Penalty}} gap\+Penalty, Substitution\+Matrix$<$ C $>$ sub\+Matrix)
+\item 
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_a55588f7e2460c4a61c31ba57da5fe247}\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_a55588f7e2460c4a61c31ba57da5fe247}} 
+static$<$ S extends Sequence$<$ C $>$ C extends Compound Profile$<$ S, C $>$ {\bfseries get\+Progressive\+Alignment} (Guide\+Tree$<$ S, C $>$ tree, Profile\+Profile\+Aligner\+Type type, \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty}{Gap\+Penalty}} gap\+Penalty, Substitution\+Matrix$<$ C $>$ sub\+Matrix)
+\item 
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_a10c34245a940e9cf71423667d29bc6d2}\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_alignments_a10c34245a940e9cf71423667d29bc6d2}} 
+static$<$ S extends Sequence$<$ C $>$ C extends Compound double\mbox{[}$\,$\mbox{]} {\bfseries run\+Pairwise\+Scorers} (List$<$ Pairwise\+Sequence\+Scorer$<$ S, C $>$ $>$ scorers)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Static utility to easily run alignment routines. To exit cleanly after running any parallel method that mentions use of the \mbox{\hyperlink{}{Concurrency\+Tools}} utility, \mbox{\hyperlink{}{Concurrency\+Tools\#shutdown()}} or \mbox{\hyperlink{}{Concurrency\+Tools\#shutdown\+And\+Await\+Termination()}} must be called.
+
+\begin{DoxyAuthor}{Author}
+Mark Chapman 
+\end{DoxyAuthor}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+biojava-\/alignment/src/main/java/org/biojava/nbio/alignment/Alignments.\+java\end{DoxyCompactItemize}

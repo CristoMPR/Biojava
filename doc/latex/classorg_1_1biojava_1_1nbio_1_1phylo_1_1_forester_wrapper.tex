@@ -1,0 +1,70 @@
+\hypertarget{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_forester_wrapper}{}\doxysection{org.\+biojava.\+nbio.\+phylo.\+Forester\+Wrapper Class Reference}
+\label{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_forester_wrapper}\index{org.biojava.nbio.phylo.ForesterWrapper@{org.biojava.nbio.phylo.ForesterWrapper}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_forester_wrapper_a463dd33f4aef9aed5b084018f51da797}\label{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_forester_wrapper_a463dd33f4aef9aed5b084018f51da797}} 
+static$<$ C extends Sequence$<$ D $>$ D extends Compound Msa {\bfseries convert} (Multiple\+Sequence\+Alignment$<$ C, D $>$ msa)  throws IOException 
+\item 
+static String \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_forester_wrapper_ac9cf35216c5ec7f59b70da618150029e}{get\+Newick\+String}} (Phylogeny phylo, boolean write\+Distances)  throws IOException 
+\item 
+static Basic\+Symmetrical\+Distance\+Matrix \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_forester_wrapper_a05515f0088e6466401c370901edbcfe9}{clone\+DM}} (Basic\+Symmetrical\+Distance\+Matrix distM)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class contains wrapper methods for communication between Bio\+Java and forester (e.\+g, Data Structure conversion).
+
+\begin{DoxyAuthor}{Author}
+Aleix Lafita 
+\end{DoxyAuthor}
+\begin{DoxySince}{Since}
+4.\+1.\+1 
+\end{DoxySince}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_forester_wrapper_a05515f0088e6466401c370901edbcfe9}\label{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_forester_wrapper_a05515f0088e6466401c370901edbcfe9}} 
+\index{org.biojava.nbio.phylo.ForesterWrapper@{org.biojava.nbio.phylo.ForesterWrapper}!cloneDM@{cloneDM}}
+\index{cloneDM@{cloneDM}!org.biojava.nbio.phylo.ForesterWrapper@{org.biojava.nbio.phylo.ForesterWrapper}}
+\doxysubsubsection{\texorpdfstring{cloneDM()}{cloneDM()}}
+{\footnotesize\ttfamily static Basic\+Symmetrical\+Distance\+Matrix org.\+biojava.\+nbio.\+phylo.\+Forester\+Wrapper.\+clone\+DM (\begin{DoxyParamCaption}\item[{Basic\+Symmetrical\+Distance\+Matrix}]{distM }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Helper function to clone a forester symmetrical Distance\+Matrix.
+
+
+\begin{DoxyParams}{Parameters}
+{\em distM} & forester symmetrical Distance\+Matrix \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+identical copy of the forester symmetrical Distance\+Matrix 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_forester_wrapper_ac9cf35216c5ec7f59b70da618150029e}\label{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_forester_wrapper_ac9cf35216c5ec7f59b70da618150029e}} 
+\index{org.biojava.nbio.phylo.ForesterWrapper@{org.biojava.nbio.phylo.ForesterWrapper}!getNewickString@{getNewickString}}
+\index{getNewickString@{getNewickString}!org.biojava.nbio.phylo.ForesterWrapper@{org.biojava.nbio.phylo.ForesterWrapper}}
+\doxysubsubsection{\texorpdfstring{getNewickString()}{getNewickString()}}
+{\footnotesize\ttfamily static String org.\+biojava.\+nbio.\+phylo.\+Forester\+Wrapper.\+get\+Newick\+String (\begin{DoxyParamCaption}\item[{Phylogeny}]{phylo,  }\item[{boolean}]{write\+Distances }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Convert a Phylogenetic tree to its Newick representation, so that it can be exported to an external application.
+
+
+\begin{DoxyParams}{Parameters}
+{\em phylo} & Phylogeny phylogenetic tree \\
+\hline
+{\em write\+Distances} & write the branch lengths if true \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+biojava-\/alignment/src/main/java/org/biojava/nbio/phylo/Forester\+Wrapper.\+java\end{DoxyCompactItemize}

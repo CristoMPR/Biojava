@@ -1,0 +1,230 @@
+\hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser}{}\doxysection{org.\+biojava.\+nbio.\+alignment.\+io.\+Stockholm\+File\+Parser Class Reference}
+\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser}\index{org.biojava.nbio.alignment.io.StockholmFileParser@{org.biojava.nbio.alignment.io.StockholmFileParser}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_a451b7120cda1172490cc85b72e14ef09}{parse}} (String filename)  throws IOException, Parser\+Exception 
+\item 
+List$<$ \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} $>$ \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_ac06d843ea730dab049601b78b7b94bc4}{parse}} (String filename, int max)  throws IOException, Parser\+Exception 
+\item 
+\mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_a810a5d979be9e4d61a9280980a8dfd93}{parse}} (Input\+Stream in\+Stream)  throws Parser\+Exception, IOException 
+\item 
+List$<$ \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} $>$ \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_ac9811ff12649a62bcf5feb41ddc7bb01}{parse}} (Input\+Stream in\+Stream, int max)  throws IOException 
+\item 
+List$<$ \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} $>$ \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_aad588d04c0967eb45f087d9249f55a60}{parse\+Next}} (int max)  throws IOException 
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static final int \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_a7ffef8695910ba9323475f7c4765fc2b}{INFINITY}} = -\/1
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stockholm file parser.~\newline
+ for more information about the format refer to 
+\begin{DoxyItemize}
+\item \href{ftp://ftp.sanger.ac.uk/pub/databases/Pfam/current_release/userman.txt}{\texttt{ ftp\+://ftp.\+sanger.\+ac.\+uk/pub/databases /\+Pfam/current\+\_\+release/userman.txt}}. 
+\item \href{ftp://ftp.sanger.ac.uk/pub/databases/Rfam/CURRENT/USERMAN}{\texttt{ ftp\+://ftp.\+sanger.\+ac.\+uk/pub/databases/\+Rfam/\+CURRENT /\+USERMAN}}. 
+\item \href{http://sonnhammer.sbc.su.se/Stockholm.html}{\texttt{ http\+://sonnhammer.\+sbc.\+su.\+se/\+Stockholm.\+html}}. 
+\end{DoxyItemize}
+
+
+\begin{DoxyPre}
+Pfam DESCRIPTION OF FIELDS
+
+   Compulsory fields:
+   -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+
+   AC   Accession number:           Accession number in form PFxxxxx.version or PBxxxxxx.
+   ID   Identification:             One word name for family.
+   DE   Definition:                 Short description of family.
+   AU   Author:                     Authors of the entry.
+   SE   Source of seed:             The source suggesting the seed members belong to one family.
+   GA   Gathering method:           Search threshold to build the full alignment.
+   TC   Trusted Cutoff:             Lowest sequence score and domain score of match in the full alignment.
+   NC   Noise Cutoff:               Highest sequence score and domain score of match not in full alignment.
+   TP   Type:                       Type of family -\/-\/ presently Family, Domain, Motif or Repeat.
+   SQ   Sequence:                   Number of sequences in alignment.
+   //                               End of alignment.
+
+   Optional fields:
+   -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+
+   DC   Database Comment:           Comment about database reference.
+   DR   Database Reference:         Reference to external database.
+   RC   Reference Comment:          Comment about literature reference.
+   RN   Reference Number:           Reference Number.
+   RM   Reference Medline:          Eight digit medline UI number.
+   RT   Reference Title:            Reference Title.
+   RA   Reference Author:           Reference Author
+   RL   Reference Location:         Journal location.
+   PI   Previous identifier:        Record of all previous ID lines.
+   KW   Keywords:                   Keywords.
+   CC   Comment:                    Comments.
+   NE   Pfam accession:             Indicates a nested domain.
+   NL   Location:                   Location of nested domains -\/ sequence ID, start and end of insert.
+   WK   Wikipedia Reference:        Reference to wikipedia.
+
+   Obsolete fields:
+   -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/
+   AL   Alignment method of seed:   The method used to align the seed members.
+   AM   Alignment Method:       The order ls and fs hits are aligned to the model to build the full align.
+
+\end{DoxyPre}
+
+
+\begin{DoxySince}{Since}
+3.\+0.\+5 
+\end{DoxySince}
+\begin{DoxyAuthor}{Author}
+Amr ALHOSSARY 
+
+Marko Vaz 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_a810a5d979be9e4d61a9280980a8dfd93}\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_a810a5d979be9e4d61a9280980a8dfd93}} 
+\index{org.biojava.nbio.alignment.io.StockholmFileParser@{org.biojava.nbio.alignment.io.StockholmFileParser}!parse@{parse}}
+\index{parse@{parse}!org.biojava.nbio.alignment.io.StockholmFileParser@{org.biojava.nbio.alignment.io.StockholmFileParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} org.\+biojava.\+nbio.\+alignment.\+io.\+Stockholm\+File\+Parser.\+parse (\begin{DoxyParamCaption}\item[{Input\+Stream}]{in\+Stream }\end{DoxyParamCaption}) throws Parser\+Exception, IOException\hspace{0.3cm}{\ttfamily [inline]}}
+
+parses \mbox{\hyperlink{}{Input\+Stream}} and returns a the first contained alignment in a \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} object. Used mainly for multiple files within the same input stream, (e.\+g. when reading from Pfam flat files. ~\newline
+ This method leaves the stream open for further calls of \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_aad588d04c0967eb45f087d9249f55a60}{parse\+Next(int)}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_aad588d04c0967eb45f087d9249f55a60}{parse\+Next(int)}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Stream} & the \mbox{\hyperlink{}{Input\+Stream}} containing the file to read. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} object representing file contents. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & \\
+\hline
+{\em Parser\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_ac9811ff12649a62bcf5feb41ddc7bb01}\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_ac9811ff12649a62bcf5feb41ddc7bb01}} 
+\index{org.biojava.nbio.alignment.io.StockholmFileParser@{org.biojava.nbio.alignment.io.StockholmFileParser}!parse@{parse}}
+\index{parse@{parse}!org.biojava.nbio.alignment.io.StockholmFileParser@{org.biojava.nbio.alignment.io.StockholmFileParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} $>$ org.\+biojava.\+nbio.\+alignment.\+io.\+Stockholm\+File\+Parser.\+parse (\begin{DoxyParamCaption}\item[{Input\+Stream}]{in\+Stream,  }\item[{int}]{max }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [inline]}}
+
+parses an \mbox{\hyperlink{}{Input\+Stream}} and returns at maximum {\ttfamily max} objects contained in that file.~\newline
+ This method leaves the stream open for further calls of \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_ac9811ff12649a62bcf5feb41ddc7bb01}{parse(\+Input\+Stream, int)}} (same function) or \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_aad588d04c0967eb45f087d9249f55a60}{parse\+Next(int)}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_aad588d04c0967eb45f087d9249f55a60}{parse\+Next(int)}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em in\+Stream} & the stream to parse \\
+\hline
+{\em max} & maximum number of structures to try to parse, \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_a7ffef8695910ba9323475f7c4765fc2b}{INFINITY}} to try to obtain as much as possible. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a \mbox{\hyperlink{}{List}} of \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} objects. If there are no more structures, an empty list is returned. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & in case an I/O Exception occurred. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_a451b7120cda1172490cc85b72e14ef09}\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_a451b7120cda1172490cc85b72e14ef09}} 
+\index{org.biojava.nbio.alignment.io.StockholmFileParser@{org.biojava.nbio.alignment.io.StockholmFileParser}!parse@{parse}}
+\index{parse@{parse}!org.biojava.nbio.alignment.io.StockholmFileParser@{org.biojava.nbio.alignment.io.StockholmFileParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} org.\+biojava.\+nbio.\+alignment.\+io.\+Stockholm\+File\+Parser.\+parse (\begin{DoxyParamCaption}\item[{String}]{filename }\end{DoxyParamCaption}) throws IOException, Parser\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Parses a Stockholm file and returns a \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} object with its content.~\newline
+ This function is meant to be used for single access to specific file and it closes the file after doing its assigned job. Any subsequent call to \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_aad588d04c0967eb45f087d9249f55a60}{parse\+Next(int)}} will throw an exception or will function with unpredicted behavior.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & complete(?) path to the file from where to read the content \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+stockholm file content 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & when an exception occurred while opening/reading/closing the file+ \\
+\hline
+{\em Parser\+Exception} & if unexpected format is encountered \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_ac06d843ea730dab049601b78b7b94bc4}\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_ac06d843ea730dab049601b78b7b94bc4}} 
+\index{org.biojava.nbio.alignment.io.StockholmFileParser@{org.biojava.nbio.alignment.io.StockholmFileParser}!parse@{parse}}
+\index{parse@{parse}!org.biojava.nbio.alignment.io.StockholmFileParser@{org.biojava.nbio.alignment.io.StockholmFileParser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} $>$ org.\+biojava.\+nbio.\+alignment.\+io.\+Stockholm\+File\+Parser.\+parse (\begin{DoxyParamCaption}\item[{String}]{filename,  }\item[{int}]{max }\end{DoxyParamCaption}) throws IOException, Parser\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Parses a Stockholm file and returns a \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} object with its content.~\newline
+ This function doesn\textquotesingle{}t close the file after doing its assigned job; to allow for further calls of \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_aad588d04c0967eb45f087d9249f55a60}{parse\+Next(int)}}.
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_aad588d04c0967eb45f087d9249f55a60}{parse\+Next(int)}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & file from where to read the content. see \mbox{\hyperlink{}{Input\+Stream\+Provider}} for more details. \\
+\hline
+{\em max} & maximum number of files to read, \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_a7ffef8695910ba9323475f7c4765fc2b}{INFINITY}} for all. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a vector of \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} containing parsed structures. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & when an exception occurred while opening/reading/closing the file. \\
+\hline
+{\em Parser\+Exception} & if unexpected format is encountered \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_aad588d04c0967eb45f087d9249f55a60}\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_aad588d04c0967eb45f087d9249f55a60}} 
+\index{org.biojava.nbio.alignment.io.StockholmFileParser@{org.biojava.nbio.alignment.io.StockholmFileParser}!parseNext@{parseNext}}
+\index{parseNext@{parseNext}!org.biojava.nbio.alignment.io.StockholmFileParser@{org.biojava.nbio.alignment.io.StockholmFileParser}}
+\doxysubsubsection{\texorpdfstring{parseNext()}{parseNext()}}
+{\footnotesize\ttfamily List$<$ \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_structure}{Stockholm\+Structure}} $>$ org.\+biojava.\+nbio.\+alignment.\+io.\+Stockholm\+File\+Parser.\+parse\+Next (\begin{DoxyParamCaption}\item[{int}]{max }\end{DoxyParamCaption}) throws IOException\hspace{0.3cm}{\ttfamily [inline]}}
+
+Tries to parse and return as maximum as {\ttfamily max} structures in the last used file or input stream.~\newline
+ Please consider calling either \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_a810a5d979be9e4d61a9280980a8dfd93}{parse(\+Input\+Stream)}}, \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_ac9811ff12649a62bcf5feb41ddc7bb01}{parse(\+Input\+Stream, int)}}, or \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_ac06d843ea730dab049601b78b7b94bc4}{parse(\+String, int)}} before calling this function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em IOException} & \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_a7ffef8695910ba9323475f7c4765fc2b}\label{classorg_1_1biojava_1_1nbio_1_1alignment_1_1io_1_1_stockholm_file_parser_a7ffef8695910ba9323475f7c4765fc2b}} 
+\index{org.biojava.nbio.alignment.io.StockholmFileParser@{org.biojava.nbio.alignment.io.StockholmFileParser}!INFINITY@{INFINITY}}
+\index{INFINITY@{INFINITY}!org.biojava.nbio.alignment.io.StockholmFileParser@{org.biojava.nbio.alignment.io.StockholmFileParser}}
+\doxysubsubsection{\texorpdfstring{INFINITY}{INFINITY}}
+{\footnotesize\ttfamily final int org.\+biojava.\+nbio.\+alignment.\+io.\+Stockholm\+File\+Parser.\+INFINITY = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+indicates reading as much as possible, without limits 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+biojava-\/alignment/src/main/java/org/biojava/nbio/alignment/io/Stockholm\+File\+Parser.\+java\end{DoxyCompactItemize}

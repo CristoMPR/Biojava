@@ -1,0 +1,121 @@
+\hypertarget{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty}{}\doxysection{org.\+biojava.\+nbio.\+alignment.\+template.\+Gap\+Penalty Interface Reference}
+\label{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty}\index{org.biojava.nbio.alignment.template.GapPenalty@{org.biojava.nbio.alignment.template.GapPenalty}}
+Inheritance diagram for org.\+biojava.\+nbio.\+alignment.\+template.\+Gap\+Penalty\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{enumorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_1_1_type}{Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_a895c05773b2149a5b3694b2bfc375f58}{get\+Extension\+Penalty}} ()
+\item 
+int \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_ad595e65a0f577e69273f959462c73f65}{get\+Open\+Penalty}} ()
+\item 
+\mbox{\hyperlink{enumorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_1_1_type}{Type}} \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_a5aef9c31c0e7e01f10289d8334f4e5bc}{get\+Type}} ()
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_a325f8b505d693dfed77271540e3c3663}{set\+Extension\+Penalty}} (int gep)
+\item 
+void \mbox{\hyperlink{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_af680274254c60a27e616ff2d3ad14f67}{set\+Open\+Penalty}} (int gop)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Defines a data structure for the gap penalties used during a sequence alignment routine.
+
+\begin{DoxyAuthor}{Author}
+Mark Chapman 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_a895c05773b2149a5b3694b2bfc375f58}\label{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_a895c05773b2149a5b3694b2bfc375f58}} 
+\index{org.biojava.nbio.alignment.template.GapPenalty@{org.biojava.nbio.alignment.template.GapPenalty}!getExtensionPenalty@{getExtensionPenalty}}
+\index{getExtensionPenalty@{getExtensionPenalty}!org.biojava.nbio.alignment.template.GapPenalty@{org.biojava.nbio.alignment.template.GapPenalty}}
+\doxysubsubsection{\texorpdfstring{getExtensionPenalty()}{getExtensionPenalty()}}
+{\footnotesize\ttfamily int org.\+biojava.\+nbio.\+alignment.\+template.\+Gap\+Penalty.\+get\+Extension\+Penalty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns penalty given when an already open gap elongates by a single element
+
+\begin{DoxyReturn}{Returns}
+gap extension penalty 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_simple_gap_penalty_a812820ac44a3c1207add519610ca7a6c}{org.\+biojava.\+nbio.\+alignment.\+Simple\+Gap\+Penalty}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_ad595e65a0f577e69273f959462c73f65}\label{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_ad595e65a0f577e69273f959462c73f65}} 
+\index{org.biojava.nbio.alignment.template.GapPenalty@{org.biojava.nbio.alignment.template.GapPenalty}!getOpenPenalty@{getOpenPenalty}}
+\index{getOpenPenalty@{getOpenPenalty}!org.biojava.nbio.alignment.template.GapPenalty@{org.biojava.nbio.alignment.template.GapPenalty}}
+\doxysubsubsection{\texorpdfstring{getOpenPenalty()}{getOpenPenalty()}}
+{\footnotesize\ttfamily int org.\+biojava.\+nbio.\+alignment.\+template.\+Gap\+Penalty.\+get\+Open\+Penalty (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns penalty given when a deletion or insertion gap first opens
+
+\begin{DoxyReturn}{Returns}
+gap open penalty 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_simple_gap_penalty_aaf78d76f2716f4c1bf1980477c960dd8}{org.\+biojava.\+nbio.\+alignment.\+Simple\+Gap\+Penalty}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_a5aef9c31c0e7e01f10289d8334f4e5bc}\label{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_a5aef9c31c0e7e01f10289d8334f4e5bc}} 
+\index{org.biojava.nbio.alignment.template.GapPenalty@{org.biojava.nbio.alignment.template.GapPenalty}!getType@{getType}}
+\index{getType@{getType}!org.biojava.nbio.alignment.template.GapPenalty@{org.biojava.nbio.alignment.template.GapPenalty}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{enumorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_1_1_type}{Type}} org.\+biojava.\+nbio.\+alignment.\+template.\+Gap\+Penalty.\+get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns \mbox{\hyperlink{enumorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_1_1_type}{Gap\+Penalty.\+Type}} stored.
+
+\begin{DoxyReturn}{Returns}
+gap penalty type 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_simple_gap_penalty_a0108ac8dcef74092a2c665f5b4c43d90}{org.\+biojava.\+nbio.\+alignment.\+Simple\+Gap\+Penalty}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_a325f8b505d693dfed77271540e3c3663}\label{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_a325f8b505d693dfed77271540e3c3663}} 
+\index{org.biojava.nbio.alignment.template.GapPenalty@{org.biojava.nbio.alignment.template.GapPenalty}!setExtensionPenalty@{setExtensionPenalty}}
+\index{setExtensionPenalty@{setExtensionPenalty}!org.biojava.nbio.alignment.template.GapPenalty@{org.biojava.nbio.alignment.template.GapPenalty}}
+\doxysubsubsection{\texorpdfstring{setExtensionPenalty()}{setExtensionPenalty()}}
+{\footnotesize\ttfamily void org.\+biojava.\+nbio.\+alignment.\+template.\+Gap\+Penalty.\+set\+Extension\+Penalty (\begin{DoxyParamCaption}\item[{int}]{gep }\end{DoxyParamCaption})}
+
+Sets penalty given when an already open gap elongates by a single element
+
+
+\begin{DoxyParams}{Parameters}
+{\em gep} & gap extension penalty \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_simple_gap_penalty_a6bd56424d1778db97d165ded3fb96ed0}{org.\+biojava.\+nbio.\+alignment.\+Simple\+Gap\+Penalty}}.
+
+\mbox{\Hypertarget{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_af680274254c60a27e616ff2d3ad14f67}\label{interfaceorg_1_1biojava_1_1nbio_1_1alignment_1_1template_1_1_gap_penalty_af680274254c60a27e616ff2d3ad14f67}} 
+\index{org.biojava.nbio.alignment.template.GapPenalty@{org.biojava.nbio.alignment.template.GapPenalty}!setOpenPenalty@{setOpenPenalty}}
+\index{setOpenPenalty@{setOpenPenalty}!org.biojava.nbio.alignment.template.GapPenalty@{org.biojava.nbio.alignment.template.GapPenalty}}
+\doxysubsubsection{\texorpdfstring{setOpenPenalty()}{setOpenPenalty()}}
+{\footnotesize\ttfamily void org.\+biojava.\+nbio.\+alignment.\+template.\+Gap\+Penalty.\+set\+Open\+Penalty (\begin{DoxyParamCaption}\item[{int}]{gop }\end{DoxyParamCaption})}
+
+Sets penalty given when a deletion or insertion gap first opens
+
+
+\begin{DoxyParams}{Parameters}
+{\em gop} & gap open penalty \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1alignment_1_1_simple_gap_penalty_a5b99a9fa280930e05bc20609c36f8902}{org.\+biojava.\+nbio.\+alignment.\+Simple\+Gap\+Penalty}}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+biojava-\/alignment/src/main/java/org/biojava/nbio/alignment/template/Gap\+Penalty.\+java\end{DoxyCompactItemize}

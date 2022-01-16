@@ -1,9 +1,3 @@
-/**
- * @author Angel Emilio Capote Perez
- * @author Cristo Manuel Perez Rodriguez
- * @author Elena Rijo Garcia
- * @date 16/01/2022
- */
 package demo;
 
 import Interfaz.Frame;
@@ -24,6 +18,10 @@ import java.io.InputStreamReader;
 
 /**
  * @class DemoSelect
+ * @author Angel Emilio Capote Perez
+ * @author Cristo Manuel Perez Rodriguez
+ * @author Elena Rijo Garcia
+ * @date 16/01/2022
  * @brief Esta clase contiene el main del programa, que se ejecutara para la verificacion el mismo.
  */
 public class DemoSelect {

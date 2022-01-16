@@ -1,0 +1,45 @@
+\hypertarget{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_distance_tree_evaluator}{}\doxysection{org.\+biojava.\+nbio.\+phylo.\+Distance\+Tree\+Evaluator Class Reference}
+\label{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_distance_tree_evaluator}\index{org.biojava.nbio.phylo.DistanceTreeEvaluator@{org.biojava.nbio.phylo.DistanceTreeEvaluator}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_distance_tree_evaluator_a3f54ec510a74a414854d416ffe0c7d4f}{evaluate}} (Phylogeny tree, Distance\+Matrix matrix)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Check the accuracy of a Distance Tree by least squares error (LSE) of the Tree branch lengths and the original Distance Matrix.
+
+\begin{DoxyAuthor}{Author}
+Scooter Willis 
+
+Aleix Lafita 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_distance_tree_evaluator_a3f54ec510a74a414854d416ffe0c7d4f}\label{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_distance_tree_evaluator_a3f54ec510a74a414854d416ffe0c7d4f}} 
+\index{org.biojava.nbio.phylo.DistanceTreeEvaluator@{org.biojava.nbio.phylo.DistanceTreeEvaluator}!evaluate@{evaluate}}
+\index{evaluate@{evaluate}!org.biojava.nbio.phylo.DistanceTreeEvaluator@{org.biojava.nbio.phylo.DistanceTreeEvaluator}}
+\doxysubsubsection{\texorpdfstring{evaluate()}{evaluate()}}
+{\footnotesize\ttfamily static double org.\+biojava.\+nbio.\+phylo.\+Distance\+Tree\+Evaluator.\+evaluate (\begin{DoxyParamCaption}\item[{Phylogeny}]{tree,  }\item[{Distance\+Matrix}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Evaluate the goodness of fit of a given tree to the original distance matrix. The returned value is the coefficient of variation, i.\+e. the square root of the LS error normalized by the mean. 
+
+This measure can also give an estimate of the quality of the distance matrix, because a bad fit may mean that the distance is non-\/additive.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tree} & Phylogenetic Distance Tree to evaluate \\
+\hline
+{\em matrix} & Distance Matrix with the original distances \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the square root of the average tree LS error normalized by the average tree distance (coefficient of variation, CV). 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+biojava-\/alignment/src/main/java/org/biojava/nbio/phylo/Distance\+Tree\+Evaluator.\+java\end{DoxyCompactItemize}

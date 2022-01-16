@@ -1,0 +1,105 @@
+\hypertarget{classdemo_1_1_waterman}{}\doxysection{demo.\+Waterman Class Reference}
+\label{classdemo_1_1_waterman}\index{demo.Waterman@{demo.Waterman}}
+
+
+Esta clase representa y compara dos secuencias de proteinas, que estan representadas por su ID. Esta clase realiza tales comparaciones de secuencias locales de manera eficiente mediante programación dinámica.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdemo_1_1_waterman_a61b3ff1735d272d2eff97db2359e2587}{Waterman}} (String id1, String id2)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Constructor de la clase que llama a los metodos para la comparacion de proteinas. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classdemo_1_1_waterman_a97a5e7539afe4eac7eaf6a702ffc00f8}{get\+Uniprot\+ID1}} ()
+\begin{DoxyCompactList}\small\item\em Getter de la primera proteina. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classdemo_1_1_waterman_a5e4bef3319de2bf5647f050341e55f10}{get\+Uniprot\+ID2}} ()
+\begin{DoxyCompactList}\small\item\em Getter de la segunda proteina. \end{DoxyCompactList}\item 
+Protein\+Sequence \mbox{\hyperlink{classdemo_1_1_waterman_a89b210315f475b5b5b6b766addcf9f90}{get\+Sequence\+For\+Id}} (String uni\+Prot\+Id)  throws Exception 
+\begin{DoxyCompactList}\small\item\em Getter de la secuencia de la proteina. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Esta clase representa y compara dos secuencias de proteinas, que estan representadas por su ID. Esta clase realiza tales comparaciones de secuencias locales de manera eficiente mediante programación dinámica. 
+
+\begin{DoxyAuthor}{Author}
+Angel Emilio Capote Perez 
+
+Cristo Manuel Perez Rodriguez 
+
+Elena Rijo Garcia 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+16/01/2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classdemo_1_1_waterman_a61b3ff1735d272d2eff97db2359e2587}\label{classdemo_1_1_waterman_a61b3ff1735d272d2eff97db2359e2587}} 
+\index{demo.Waterman@{demo.Waterman}!Waterman@{Waterman}}
+\index{Waterman@{Waterman}!demo.Waterman@{demo.Waterman}}
+\doxysubsubsection{\texorpdfstring{Waterman()}{Waterman()}}
+{\footnotesize\ttfamily demo.\+Waterman.\+Waterman (\begin{DoxyParamCaption}\item[{String}]{id1,  }\item[{String}]{id2 }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de la clase que llama a los metodos para la comparacion de proteinas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id1} & String identificador de la proteina \\
+\hline
+{\em id2} & String identificador de la proteina \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classdemo_1_1_waterman_a89b210315f475b5b5b6b766addcf9f90}\label{classdemo_1_1_waterman_a89b210315f475b5b5b6b766addcf9f90}} 
+\index{demo.Waterman@{demo.Waterman}!getSequenceForId@{getSequenceForId}}
+\index{getSequenceForId@{getSequenceForId}!demo.Waterman@{demo.Waterman}}
+\doxysubsubsection{\texorpdfstring{getSequenceForId()}{getSequenceForId()}}
+{\footnotesize\ttfamily Protein\+Sequence demo.\+Waterman.\+get\+Sequence\+For\+Id (\begin{DoxyParamCaption}\item[{String}]{uni\+Prot\+Id }\end{DoxyParamCaption}) throws Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter de la secuencia de la proteina. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em uni\+Prot\+Id} & String del ID de la proteina \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+La secuencia de la proteina 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdemo_1_1_waterman_a97a5e7539afe4eac7eaf6a702ffc00f8}\label{classdemo_1_1_waterman_a97a5e7539afe4eac7eaf6a702ffc00f8}} 
+\index{demo.Waterman@{demo.Waterman}!getUniprotID1@{getUniprotID1}}
+\index{getUniprotID1@{getUniprotID1}!demo.Waterman@{demo.Waterman}}
+\doxysubsubsection{\texorpdfstring{getUniprotID1()}{getUniprotID1()}}
+{\footnotesize\ttfamily String demo.\+Waterman.\+get\+Uniprot\+ID1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter de la primera proteina. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classdemo_1_1_waterman_a5e4bef3319de2bf5647f050341e55f10}\label{classdemo_1_1_waterman_a5e4bef3319de2bf5647f050341e55f10}} 
+\index{demo.Waterman@{demo.Waterman}!getUniprotID2@{getUniprotID2}}
+\index{getUniprotID2@{getUniprotID2}!demo.Waterman@{demo.Waterman}}
+\doxysubsubsection{\texorpdfstring{getUniprotID2()}{getUniprotID2()}}
+{\footnotesize\ttfamily String demo.\+Waterman.\+get\+Uniprot\+ID2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter de la segunda proteina. 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+biojava-\/alignment/src/main/java/demo/Waterman.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,64 @@
+\hypertarget{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_comparison}{}\doxysection{org.\+biojava.\+nbio.\+phylo.\+Comparison Class Reference}
+\label{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_comparison}\index{org.biojava.nbio.phylo.Comparison@{org.biojava.nbio.phylo.Comparison}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static final float \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_comparison_a9274262be98d9b97c1fa3f76e88e77dd}{PID}} (String seq1, String seq2)
+\item 
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_comparison_a962189fbcc5d16c8b5d3477997a00dd4}\label{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_comparison_a962189fbcc5d16c8b5d3477997a00dd4}} 
+static final float {\bfseries PID} (String seq1, String seq2, int start, int end)
+\item 
+static final boolean \mbox{\hyperlink{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_comparison_a13faa69b3e0e64a3749bf155e2e96a26}{is\+Gap}} (char c)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class provides static methods for the calculation of the percentage of identity between two aligned sequences. 
+
+Since 4.\+1.\+1 the methods for distance inference in forester are also used in Bio\+Java, so this implementation of percentage of identity is not needed anymore. However, the code is maintained as the own Bio\+Java implementation.
+
+\begin{DoxyAuthor}{Author}
+Scooter Willis 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_comparison_a13faa69b3e0e64a3749bf155e2e96a26}\label{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_comparison_a13faa69b3e0e64a3749bf155e2e96a26}} 
+\index{org.biojava.nbio.phylo.Comparison@{org.biojava.nbio.phylo.Comparison}!isGap@{isGap}}
+\index{isGap@{isGap}!org.biojava.nbio.phylo.Comparison@{org.biojava.nbio.phylo.Comparison}}
+\doxysubsubsection{\texorpdfstring{isGap()}{isGap()}}
+{\footnotesize\ttfamily static final boolean org.\+biojava.\+nbio.\+phylo.\+Comparison.\+is\+Gap (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Method that determines if a character means a gap in the alignment.
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & gap character is one of the symbols in \{\textquotesingle{} \textquotesingle{},\textquotesingle{}-\/\textquotesingle{},\textquotesingle{}.\textquotesingle{}\}\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if it is a gap, false otherwise 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_comparison_a9274262be98d9b97c1fa3f76e88e77dd}\label{classorg_1_1biojava_1_1nbio_1_1phylo_1_1_comparison_a9274262be98d9b97c1fa3f76e88e77dd}} 
+\index{org.biojava.nbio.phylo.Comparison@{org.biojava.nbio.phylo.Comparison}!PID@{PID}}
+\index{PID@{PID}!org.biojava.nbio.phylo.Comparison@{org.biojava.nbio.phylo.Comparison}}
+\doxysubsubsection{\texorpdfstring{PID()}{PID()}}
+{\footnotesize\ttfamily static final float org.\+biojava.\+nbio.\+phylo.\+Comparison.\+PID (\begin{DoxyParamCaption}\item[{String}]{seq1,  }\item[{String}]{seq2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+this is a gapped PID calculation
+
+
+\begin{DoxyParams}{Parameters}
+{\em s1} & SequenceI \\
+\hline
+{\em s2} & SequenceI \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+biojava-\/alignment/src/main/java/org/biojava/nbio/phylo/Comparison.\+java\end{DoxyCompactItemize}
