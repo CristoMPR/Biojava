@@ -3,8 +3,8 @@ package org.biojava.nbio.alignment;
 import demo.Waterman;
 import org.biojava.nbio.core.exceptions.CompoundNotFoundException;
 import org.biojava.nbio.core.sequence.ProteinSequence;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 
 import static org.junit.Assert.assertEquals;
@@ -27,11 +27,11 @@ public class WatermanTest {
     private String seq1;
     private String seq2;
 
-    @Before
+    @BeforeEach
     public void setup() throws Exception {
         uniprotID1 = "P69905";
         uniprotID2 = "P68871";
-        waterman = new Waterman(uniprotID1, uniprotID2);
+        waterman = new Waterman(uniprotID1, uniprotID2, "waterman-test");
         seq1 = "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGKKVADALTNAVAHVDDMPNALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR";
         seq2 = "MVHLTPEEKSAVTALWGKVNVDEVGGEALGRLLVVYPWTQRFFESFGDLSTPDAVMGNPKVKAHGKKVLGAFSDGLAHLDNLKGTFATLSELHCDKLHVDPENFRLLGNVLVCVLAHHFGKEFTPPVQAAYQKVVAGVANALAHKYH";
     }

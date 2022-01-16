@@ -1,5 +1,6 @@
 org\biojava\nbio\alignment\template\AbstractProfileProfileAligner.class
 org\biojava\nbio\alignment\io\StockholmStructure.class
+Interfaz\Panel.class
 org\biojava\nbio\alignment\io\StockholmStructure$DatabaseReference.class
 org\biojava\nbio\alignment\FractionalSimilarityInProfileScorer.class
 org\biojava\nbio\alignment\StandardRescoreRefiner.class
@@ -21,12 +22,15 @@ demo\DNANeedlemanWunsch.class
 org\biojava\nbio\alignment\template\PartitionRefiner.class
 org\biojava\nbio\phylo\TreeConstructor.class
 org\biojava\nbio\alignment\SimpleProfileProfileAligner.class
+Interfaz\Frame.class
 org\biojava\nbio\alignment\routines\AlignerHelper$Anchor.class
 org\biojava\nbio\alignment\io\StockholmFileAnnotation.class
 org\biojava\nbio\alignment\routines\AlignerHelper$1.class
 org\biojava\nbio\alignment\FractionalSimilarityScorer.class
+Interfaz\DisplayPanel.class
 org\biojava\nbio\phylo\Comparison.class
 org\biojava\nbio\phylo\TreeConstructor$1.class
+Interfaz\DisplayPanel$startAction.class
 org\biojava\nbio\alignment\template\HierarchicalClusterer.class
 org\biojava\nbio\alignment\Alignments$1.class
 org\biojava\nbio\alignment\Alignments$PairwiseSequenceAlignerType.class
@@ -37,11 +41,13 @@ org\biojava\nbio\phylo\ForesterWrapper$1.class
 org\biojava\nbio\alignment\io\StockholmFileParser.class
 org\biojava\nbio\alignment\template\PairwiseSequenceScorer.class
 org\biojava\nbio\alignment\template\PairwiseSequenceAligner.class
+Interfaz\DisplayPanel$showAction.class
 org\biojava\nbio\alignment\NeedlemanWunsch.class
 org\biojava\nbio\alignment\template\RescoreRefiner.class
 org\biojava\nbio\alignment\GuideTree$PostOrderIterator.class
 org\biojava\nbio\alignment\template\GapPenalty$Type.class
 org\biojava\nbio\phylo\TreeConstructorType.class
+demo\DemoSelect.class
 org\biojava\nbio\phylo\TreeType.class
 org\biojava\nbio\alignment\routines\AlignerHelper$Cut.class
 org\biojava\nbio\alignment\template\GuideTreeNode.class

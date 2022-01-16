@@ -35,7 +35,7 @@ public class Waterman {
      * @param id1: String identificador de la proteina
      * @param id2: String identificador de la proteina
      */
-    public Waterman(String id1, String id2) throws Exception {
+    public Waterman(String id1, String id2, String name) throws Exception {
 
         uniprotID1 = id1;
         uniprotID2 = id2;
@@ -54,7 +54,7 @@ public class Waterman {
 
         pair = smithWaterman.getPair();
 
-        toJSON();
+        toJSON(name);
 
     }
 
@@ -88,7 +88,7 @@ public class Waterman {
     /**
      * @brief Método para escribir el contenido en un fichero JSON
      */
-    private void toJSON() throws IOException {
+    private void toJSON(String name) throws IOException {
         String json = "{ \n \t\"Proteina\": [\n\t{\n";
         json += "\t\t\"id\": \""+uniprotID1+"\",\n";
         json += "\t\t\"seq\": \""+s1+"\",\n";
@@ -98,10 +98,8 @@ public class Waterman {
         json += "\t\t\"header\": \""+s2.getOriginalHeader()+"\"\n\t}\n\t],\n";
         json += "\t\"alignment\": \n\""+pair.toString()+"\"\n}";
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        System.out.println("Introduzca el nombre del fichero: ");
-        String filename = reader.readLine();
+        String filename = name;
         filename += ".json";
         try (BufferedWriter bw = new BufferedWriter(new FileWriter(filename))) {
             bw.write(json);

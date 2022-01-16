@@ -8,8 +8,8 @@ import org.biojava.nbio.core.alignment.template.SubstitutionMatrix;
 import org.biojava.nbio.core.exceptions.CompoundNotFoundException;
 import org.biojava.nbio.core.sequence.ProteinSequence;
 import org.biojava.nbio.core.sequence.compound.AminoAcidCompound;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.DisplayName;
 
 import static org.junit.Assert.assertEquals;
@@ -33,7 +33,7 @@ public class NeedlemanTest {
     private SubstitutionMatrix<AminoAcidCompound> blosum62;
     private NeedlemanWunsch<ProteinSequence, AminoAcidCompound> alignment, self;
 
-    @Before
+    @BeforeEach
     public void setup() throws CompoundNotFoundException {
         query = new ProteinSequence("ARND");
         target = new ProteinSequence("RDG");

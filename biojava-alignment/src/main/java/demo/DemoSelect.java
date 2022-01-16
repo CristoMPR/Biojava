@@ -56,7 +56,10 @@ public class DemoSelect {
 
 
         if (!id1.isEmpty() && !id2.isEmpty()) {
-            Waterman wat = new Waterman(id1, id2);
+
+            System.out.println("Introduzca el nombre del fichero: ");
+            String filename = reader.readLine();
+            Waterman wat = new Waterman(id1, id2, filename);
         } else {
             System.out.println("Introduzca los valores del 'Query': ");
             String query = reader.readLine();
