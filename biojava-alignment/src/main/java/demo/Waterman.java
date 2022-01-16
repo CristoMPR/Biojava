@@ -1,3 +1,10 @@
+/**
+ * @author Angel Emilio Capote Perez
+ * @author Cristo Manuel Perez Rodriguez
+ * @author Elena Rijo Garcia
+ * @date 16/01/2022
+ */
+
 package demo;
 
 import org.biojava.nbio.alignment.Alignments;
@@ -10,14 +17,16 @@ import org.biojava.nbio.core.alignment.template.SubstitutionMatrix;
 import org.biojava.nbio.core.sequence.ProteinSequence;
 import org.biojava.nbio.core.sequence.compound.AminoAcidCompound;
 import org.biojava.nbio.core.sequence.io.FastaReaderHelper;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
+/**
+ * @class Waterman
+ * @brief Esta clase representa y compara dos secuencias de proteinas, que estan representadas por su ID. Esta clase
+ * realiza tales comparaciones de secuencias locales de manera eficiente mediante programación dinámica.
+ */
 public class Waterman {
     private String uniprotID1;
     private String uniprotID2;
@@ -25,6 +34,11 @@ public class Waterman {
     private ProteinSequence s2;
     private SequencePair<ProteinSequence, AminoAcidCompound> pair;
 
+    /**
+     * @brief Constructor de la clase que llama a los metodos para la comparacion de proteinas
+     * @param id1: String identificador de la proteina
+     * @param id2: String identificador de la proteina
+     */
     public Waterman(String id1, String id2) throws Exception {
 
         uniprotID1 = id1;
@@ -48,20 +62,36 @@ public class Waterman {
 
     }
 
+    /**
+     * @brief Getter de la primera proteina
+     * @return
+     */
     public String getUniprotID1() {
         return uniprotID1;
     }
 
+    /**
+     * @brief Getter de la segunda proteina
+     * @return
+     */
     public String getUniprotID2() {
         return uniprotID2;
     }
 
+    /**
+     * @brief Getter de la secuencia de la proteina
+     * @param uniProtId: String del ID de la proteina
+     * @return La secuencia de la proteina
+     */
     public ProteinSequence getSequenceForId(String uniProtId) throws Exception {
         URL uniprotFasta = new URL(String.format("https://www.uniprot.org/uniprot/%s.fasta", uniProtId));
         ProteinSequence seq = FastaReaderHelper.readFastaProteinSequence(uniprotFasta.openStream()).get(uniProtId);
         return seq;
     }
 
+    /**
+     * @brief Método para escribir el contenido en un fichero JSON
+     */
     private void toJSON() {
         String json = "{ \n \t\"Proteina\": [\n\t{\n";
         json += "\t\t\"id\": \""+uniprotID1+"\",\n";

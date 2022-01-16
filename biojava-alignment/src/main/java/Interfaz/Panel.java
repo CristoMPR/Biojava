@@ -27,10 +27,6 @@ public class Panel extends JPanel implements ActionListener {
 
         buttonStart.setBounds(460, 120, 125, 30);
         demoBox.setBounds(650, 70, 200, 30);
-        //demoBox.addItem("CookbookMSA");
-        //demoBox.addItem("DemoAlignProteins");
-        //demoBox.addItem("DemoDistanceTree");
-        //demoBox.addItem("DemoLoadSubstMax");
         demoBox.addItem("TestDNANeedlemanWunsch");
 
         add(buttonStart);
@@ -60,7 +56,6 @@ public class Panel extends JPanel implements ActionListener {
            if(demoBox.getSelectedItem().toString().equals("TestDNANeedlemanWunsch")) {
                displayPanel.wunsch();
            }
-           //TODO IF
        }
     }
 

@@ -7,9 +7,7 @@ org\biojava\nbio\alignment\template\AbstractPairwiseSequenceAligner.class
 org\biojava\nbio\alignment\template\ProfileProfileScorer.class
 org\biojava\nbio\alignment\Alignments$RefinerType.class
 org\biojava\nbio\alignment\GuideTree$Node.class
-demo\TestDNANeedlemanWunsch.class
 org\biojava\nbio\alignment\SubstitutionMatrixScorer.class
-demo\DemoLoadSubstMax.class
 org\biojava\nbio\phylo\DistanceMatrixCalculator.class
 org\biojava\nbio\alignment\FractionalIdentityInProfileScorer.class
 org\biojava\nbio\alignment\io\StockholmFileAnnotation$StockholmFileAnnotationReference.class
@@ -19,10 +17,10 @@ org\biojava\nbio\alignment\routines\GuanUberbacher.class
 org\biojava\nbio\alignment\routines\AlignerHelper$Anchor$QueryIndexComparator.class
 org\biojava\nbio\alignment\FractionalIdentityScorer.class
 org\biojava\nbio\alignment\SimpleGapPenalty.class
+demo\DNANeedlemanWunsch.class
 org\biojava\nbio\alignment\template\PartitionRefiner.class
 org\biojava\nbio\phylo\TreeConstructor.class
 org\biojava\nbio\alignment\SimpleProfileProfileAligner.class
-demo\CookbookMSA.class
 org\biojava\nbio\alignment\routines\AlignerHelper$Anchor.class
 org\biojava\nbio\alignment\io\StockholmFileAnnotation.class
 org\biojava\nbio\alignment\routines\AlignerHelper$1.class
@@ -32,7 +30,6 @@ org\biojava\nbio\phylo\TreeConstructor$1.class
 org\biojava\nbio\alignment\template\HierarchicalClusterer.class
 org\biojava\nbio\alignment\Alignments$1.class
 org\biojava\nbio\alignment\Alignments$PairwiseSequenceAlignerType.class
-demo\DemoAlignProteins.class
 org\biojava\nbio\alignment\Alignments$PairwiseSequenceScorerType.class
 org\biojava\nbio\alignment\template\CallableProfileProfileAligner.class
 org\biojava\nbio\alignment\template\MatrixAligner.class
@@ -48,7 +45,6 @@ org\biojava\nbio\phylo\TreeConstructorType.class
 org\biojava\nbio\phylo\TreeType.class
 org\biojava\nbio\alignment\routines\AlignerHelper$Cut.class
 org\biojava\nbio\alignment\template\GuideTreeNode.class
-demo\DemoDistanceTree.class
 org\biojava\nbio\alignment\template\CallablePairwiseSequenceScorer.class
 org\biojava\nbio\alignment\template\Aligner.class
 demo\Waterman.class

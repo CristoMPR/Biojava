@@ -1,3 +1,9 @@
+/**
+ * @author Angel Emilio Capote Perez
+ * @author Cristo Manuel Perez Rodriguez
+ * @author Elena Rijo Garcia
+ * @date 16/01/2022
+ */
 package demo;
 
 import Interfaz.Frame;
@@ -16,15 +22,19 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+/**
+ * @class DemoSelect
+ * @brief Esta clase contiene el main del programa, que se ejecutara para la verificacion el mismo.
+ */
 public class DemoSelect {
 
     static public void main(String[] args) throws Exception {
         System.out.println(args[0]);
 
-        if(args[0].equals(Integer.toString(1)) ){
+        if(args[0].equals("Interfaz")){
             System.out.println("GUI DEMO ");
             new Frame();
-        } else if(args[0].equals(Integer.toString(2))){
+        } else if(args[0].equals("Terminal")) {
             System.out.println("GUI Sin Interfaz ");
             if(args.length == 1)
                 valoresTerminal("", "");
@@ -36,12 +46,15 @@ public class DemoSelect {
             System.out.println("¡Introduzca un valor valido!");
         }
     }
-    
+
+    /**
+     * @brief Metodo estatico que representa el menu que saldrá por terminal.
+     * @param id1: String identificador de la proteina
+     * @param id2: String identificador de la proteina
+     */
     private static void valoresTerminal(String id1, String id2) throws IOException, CompoundNotFoundException, Exception {
 
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        //System.out.println("Quiere usar: \nwaterman: 1\nWunsch: 2");
-        //String option = reader.readLine();
 
 
         if (!id1.isEmpty() && !id2.isEmpty()) {

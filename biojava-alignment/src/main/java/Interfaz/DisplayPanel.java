@@ -1,7 +1,6 @@
 package Interfaz;
 
-import demo.CookbookMSA;
-import demo.TestDNANeedlemanWunsch;
+import demo.DNANeedlemanWunsch;
 
 import javax.swing.*;
 import java.awt.*;
@@ -75,7 +74,7 @@ public class DisplayPanel extends JPanel{
             String query = queryArea.getText();
             String target = targetArea.getText();
             try {
-                TestDNANeedlemanWunsch.TestDNANeedlemanWunsch(query, target);
+                DNANeedlemanWunsch.TestDNANeedlemanWunsch(query, target);
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
@@ -86,7 +85,7 @@ public class DisplayPanel extends JPanel{
 
     class showAction implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-            HashMap myMap = TestDNANeedlemanWunsch.getWunschMap();
+            HashMap myMap = DNANeedlemanWunsch.getWunschMap();
             String[] info = (String[]) myMap.get(Integer.parseInt(wunschBox.getSelectedItem().toString()));
             displayArea = new JTextArea();
             displayArea.setBackground(Color.WHITE);
