@@ -30,8 +30,8 @@ import org.biojava.nbio.core.alignment.template.SubstitutionMatrix;
 import org.biojava.nbio.core.exceptions.CompoundNotFoundException;
 import org.biojava.nbio.core.sequence.ProteinSequence;
 import org.biojava.nbio.core.sequence.compound.AminoAcidCompound;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -46,7 +46,7 @@ public class FractionalIdentityScorerTest {
 	private NeedlemanWunsch<ProteinSequence, AminoAcidCompound> alignment, self;
 	private PairwiseSequenceScorer<ProteinSequence, AminoAcidCompound> scorer1, scorer2;
 
-	@Before
+	@BeforeEach
 	public void setup() throws CompoundNotFoundException {
 		query = new ProteinSequence("ARND");
 		target = new ProteinSequence("RDG");

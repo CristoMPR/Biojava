@@ -37,7 +37,7 @@ import org.biojava.nbio.core.sequence.compound.NucleotideCompound;
 import org.biojava.nbio.core.sequence.io.FastaReaderHelper;
 import org.biojava.nbio.core.util.ConcurrencyTools;
 import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.io.InputStream;
 import java.util.ArrayList;

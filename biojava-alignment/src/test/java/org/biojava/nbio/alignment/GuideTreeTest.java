@@ -32,8 +32,8 @@ import org.biojava.nbio.core.alignment.template.SubstitutionMatrix;
 import org.biojava.nbio.core.exceptions.CompoundNotFoundException;
 import org.biojava.nbio.core.sequence.ProteinSequence;
 import org.biojava.nbio.core.sequence.compound.AminoAcidCompound;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import java.util.List;
@@ -47,7 +47,7 @@ public class GuideTreeTest {
 	private SubstitutionMatrix<AminoAcidCompound> blosum62;
 	private GuideTree<ProteinSequence, AminoAcidCompound> tree;
 
-	@Before
+	@BeforeEach
 	public void setup() throws CompoundNotFoundException {
 		proteins = Arrays.asList(new ProteinSequence[] {new ProteinSequence("ARND"), new ProteinSequence("ARND"),
 				new ProteinSequence("HILK"), new ProteinSequence("ANDR")});

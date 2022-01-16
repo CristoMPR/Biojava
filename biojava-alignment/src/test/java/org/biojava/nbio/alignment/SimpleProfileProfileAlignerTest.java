@@ -32,8 +32,8 @@ import org.biojava.nbio.core.alignment.template.SubstitutionMatrix;
 import org.biojava.nbio.core.exceptions.CompoundNotFoundException;
 import org.biojava.nbio.core.sequence.ProteinSequence;
 import org.biojava.nbio.core.sequence.compound.AminoAcidCompound;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.*;
 
@@ -48,7 +48,7 @@ public class SimpleProfileProfileAlignerTest {
 	private SimpleProfileProfileAligner<ProteinSequence, AminoAcidCompound> sppa1, sppa2, sppa3;
 	private ProfilePair<ProteinSequence, AminoAcidCompound> pp1, pp2, all;
 
-	@Before
+	@BeforeEach
 	public void setup() throws CompoundNotFoundException {
 		protein1 = new ProteinSequence("ARND");
 		protein2 = new ProteinSequence("ARND");

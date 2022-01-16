@@ -35,8 +35,8 @@ import org.biojava.nbio.core.sequence.compound.AmbiguityDNACompoundSet;
 import org.biojava.nbio.core.sequence.compound.AminoAcidCompound;
 import org.biojava.nbio.core.sequence.compound.DNACompoundSet;
 import org.biojava.nbio.core.sequence.compound.NucleotideCompound;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
@@ -51,7 +51,7 @@ public class NeedlemanWunschTest {
 	private SubstitutionMatrix<AminoAcidCompound> blosum62;
 	private NeedlemanWunsch<ProteinSequence, AminoAcidCompound> alignment, self;
 
-	@Before
+	@BeforeEach
 	public void setup() throws CompoundNotFoundException {
 		query = new ProteinSequence("ARND");
 		target = new ProteinSequence("RDG");

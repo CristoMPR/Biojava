@@ -27,9 +27,9 @@ import org.biojava.nbio.core.exceptions.CompoundNotFoundException;
 import org.biojava.nbio.core.sequence.DNASequence;
 import org.biojava.nbio.core.sequence.compound.NucleotideCompound;
 import org.biojava.nbio.core.util.ConcurrencyTools;
-import org.junit.Before;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.junit.Ignore;
-import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,7 +38,7 @@ public class TestSubOptimalMSA {
 
 	private List<DNASequence> sequences = new ArrayList<DNASequence>();
 
-	@Before
+	@BeforeEach
 	public void setUp() {
 		try {
 			sequences.add(new DNASequence("TTGGGGCCTCTAAACGGGGTCTT"));

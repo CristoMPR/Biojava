@@ -32,8 +32,8 @@ import org.biojava.nbio.core.alignment.template.SubstitutionMatrix;
 import org.biojava.nbio.core.exceptions.CompoundNotFoundException;
 import org.biojava.nbio.core.sequence.ProteinSequence;
 import org.biojava.nbio.core.sequence.compound.AminoAcidCompound;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 import org.biojava.nbio.alignment.NeedlemanWunsch;
@@ -49,7 +49,7 @@ public class SimpleProfilePairTest {
 	private SubstitutionMatrix<AminoAcidCompound> blosum62;
 	private Profile<ProteinSequence, AminoAcidCompound> pair1, pair2;
 
-	@Before
+	@BeforeEach
 	public void setup() throws CompoundNotFoundException {
 		protein1 = new ProteinSequence("ARND");
 		protein2 = new ProteinSequence("ARND");
