@@ -25,7 +25,7 @@ public class Waterman {
     private ProteinSequence s2;
     private SequencePair<ProteinSequence, AminoAcidCompound> pair;
 
-    Waterman(String id1, String id2) throws Exception {
+    public Waterman(String id1, String id2) throws Exception {
 
         uniprotID1 = id1;
         uniprotID2 = id2;
@@ -48,7 +48,15 @@ public class Waterman {
 
     }
 
-    private ProteinSequence getSequenceForId(String uniProtId) throws Exception {
+    public String getUniprotID1() {
+        return uniprotID1;
+    }
+
+    public String getUniprotID2() {
+        return uniprotID2;
+    }
+
+    public ProteinSequence getSequenceForId(String uniProtId) throws Exception {
         URL uniprotFasta = new URL(String.format("https://www.uniprot.org/uniprot/%s.fasta", uniProtId));
         ProteinSequence seq = FastaReaderHelper.readFastaProteinSequence(uniprotFasta.openStream()).get(uniProtId);
         return seq;
