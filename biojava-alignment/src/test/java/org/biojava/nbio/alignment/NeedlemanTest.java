@@ -1,4 +1,4 @@
-package org.biojava.nbio.alignment.TestPropios;
+package org.biojava.nbio.alignment;
 
 import org.biojava.nbio.alignment.NeedlemanWunsch;
 import org.biojava.nbio.alignment.SimpleGapPenalty;

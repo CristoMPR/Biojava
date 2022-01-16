@@ -71,109 +71,7 @@
 	<!-- This section required for release at Maven Central. For a full list
 		of Developers, please see https://github.com/orgs/biojava/members For a list
 		of contributors, please see https://github.com/biojava/biojava/graphs/contributors -->
-	<developers>
-		<developer>
-			<id>andreas</id>
-			<name>Andreas Prlic</name>
-			<email>andreas.prlic@gmail.com</email>
-			<url>http://www.spice-3d.org</url>
-			<organization>University of California, San Diego</organization>
-			<organizationUrl>http://www.rcsb.org</organizationUrl>
-			<roles>
-				<role>project lead</role>
-				<role>architect</role>
-				<role>developer</role>
-			</roles>
-			<timezone>-9</timezone>
-			<properties>
-				<picUrl>http://tinyurl.com/mymsfga</picUrl>
-			</properties>
-		</developer>
-		<developer>
-			<id>lafita</id>
-			<name>Aleix Lafita</name>
-		</developer>
-		<developer>
-			<id>aalhossary</id>
-			<name>Amr ALHOSSARY</name>
-		</developer>
-		<developer>
-			<name>Andreas Dräger</name>
-		</developer>
-		<developer>
-			<name>Andy Yates</name>
-		</developer>
-		<developer>
-            <name>Anthony Bradley</name>
-      	</developer>
-		<developer>
-			<name>Carmelo Foti</name>
-		</developer>
-		<developer>
-			<name>Chuan Hock Koh</name>
-		</developer>
-		<developer>
-			<name>Douglas Myers-Turnbull</name>
-		</developer>
-		<developer>
-			<name>Gediminas Rimsa</name>
-		</developer>
-		<developer>
-			<name>George Waldon</name>
-		</developer>
-		<developer>
-			<name>Hannes Brandstätter-Müller</name>
-		</developer>
-		<developer>
-			<name>Elinow</name>
-		</developer>
-		<developer>
-			<name>Jianjiong Gao</name>
-		</developer>
-		<developer>
-			<name>Jonathan Warren</name>
-		</developer>
-		<developer>
-			<name>Jose Manuel Duarte</name>
-		</developer>
-		<developer>
-			<name>Jules Jacobsen</name>
-		</developer>
-		<developer>
-			<name>Karl Nicholas</name>
-		</developer>
-		<developer>
-			<name>Mark Chapman</name>
-		</developer>
-		<developer>
-			<name>Michael Heuer</name>
-		</developer>
-		<developer>
-			<id>paolopavan</id>
-			<name>Paolo Pavan</name>
-		</developer>
-		<developer>
-			<name>Peter Rose</name>
-		</developer>
-		<developer>
-			<name>Peter Troshin</name>
-		</developer>
-		<developer>
-			<name>Richard Holland</name>
-		</developer>
-		<developer>
-			<name>Robert Thornton</name>
-		</developer>
-		<developer>
-			<name>Scooter Willis</name>
-		</developer>
-		<developer>
-			<name>Spencer Bliven</name>
-		</developer>
-		<developer>
-			<name>Sylvain Foisy</name>
-		</developer>
-	</developers>
+
 
 
 	<build>
@@ -191,7 +89,7 @@
 						<target>${jdk.version}</target>
 					</configuration>
 				</plugin>
-				<plugin>
+				<!--plugin>
 					<artifactId>maven-dependency-plugin</artifactId>
 					<version>3.1.2</version>
 					<executions>
@@ -208,7 +106,7 @@
 							</configuration>
 						</execution>
 					</executions>
-				</plugin>
+				</plugin-->
 				<plugin>
 					<artifactId>maven-jar-plugin</artifactId>
 					<version>3.2.0</version>
@@ -730,9 +628,6 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-surefire-plugin</artifactId>
-						<configuration>
-							<skipTests>true</skipTests>
-						</configuration>
 					</plugin>
 
 				</plugins>

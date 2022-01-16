@@ -1,4 +1,4 @@
-package org.biojava.nbio.alignment.TestPropios;
+package org.biojava.nbio.alignment;
 
 import demo.Waterman;
 import org.biojava.nbio.core.exceptions.CompoundNotFoundException;

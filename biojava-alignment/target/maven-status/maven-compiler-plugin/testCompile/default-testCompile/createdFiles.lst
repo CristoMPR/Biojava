@@ -10,11 +10,12 @@ org\biojava\nbio\alignment\CookbookMSAProfiler.class
 org\biojava\nbio\alignment\routines\GuanUberbacherTest.class
 org\biojava\nbio\alignment\SimpleSubstitutionMatrixTest.class
 org\biojava\nbio\alignment\aaindex\TestAAINDEXLoading.class
+org\biojava\nbio\alignment\WatermanTest.class
 org\biojava\nbio\phylo\TestForesterWrapper.class
+org\biojava\nbio\alignment\NeedlemanTest.class
 org\biojava\nbio\alignment\SmithWatermanTest.class
 org\biojava\nbio\alignment\FractionalIdentityScorerTest.class
 org\biojava\nbio\alignment\CookbookAlignAllLocal.class
-org\biojava\nbio\alignment\TestPropios\WatermanTest.class
 org\biojava\nbio\alignment\CookbookAlignAllGlobal.class
 org\biojava\nbio\alignment\CookbookAlignPairLocal.class
 org\biojava\nbio\alignment\CookbookAlignPairGlobal.class
@@ -24,5 +25,4 @@ org\biojava\nbio\alignment\routines\AlignerHelperTest.class
 org\biojava\nbio\phylo\TestForesterWrapper$1.class
 org\biojava\nbio\alignment\SimpleGapPenaltyTest.class
 org\biojava\nbio\alignment\CookbookMSA.class
-org\biojava\nbio\alignment\TestPropios\NeedlemanTest.class
 org\biojava\nbio\alignment\CookbookMSAProfiler$Profiler.class

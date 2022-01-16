@@ -1,9 +1,10 @@
 C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\routines\GuanUberbacherTest.java
+C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\NeedlemanTest.java
 C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\io\TestStockholmParser.java
 C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\SimpleGapPenaltyTest.java
+C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\WatermanTest.java
 C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\SimpleProfilePairTest.java
 C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\TestDNAAlignment.java
-C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\TestPropios\NeedlemanTest.java
 C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\aaindex\TestAAINDEXLoading.java
 C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\CookbookAlignPairGlobal.java
 C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\FractionalIdentityScorerTest.java
@@ -13,7 +14,6 @@ C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\bi
 C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\CookbookAlignAllGlobal.java
 C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\TestSubOptimalMSA.java
 C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\phylo\TestDistanceTreeEvaluator.java
-C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\TestPropios\WatermanTest.java
 C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\phylo\TestForesterWrapper.java
 C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\FractionalSimilarityScorerTest.java
 C:\Users\crist\OneDrive\Escritorio\ULL-20-21\4º\LAB\biojava-1\biojava-master\biojava-alignment\src\test\java\org\biojava\nbio\alignment\NeedlemanWunschTest.java
