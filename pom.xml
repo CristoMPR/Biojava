@@ -696,8 +696,6 @@
 	</profiles>
 
 	<modules>
-
-		<module>biojava-core</module>
 		<module>biojava-alignment</module>
 		<!-- Keep integration tests last  -->
 		<!--module>biojava-integrationtest</module-->
