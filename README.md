@@ -1,3 +1,4 @@
+[![SonarCloud](https://sonarcloud.io/images/project_badges/sonarcloud-white.svg)](https://sonarcloud.io/summary/new_code?id=CristoMPR_Biojava)
 # Proyecto Biojava
 
 Proyecto desarrollado para la asignatura Laboratorio de Desarrollo y Herramientas.
